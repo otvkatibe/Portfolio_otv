@@ -1,23 +1,28 @@
+/* Reset básico */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
     color: white;
     background-color: black;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     overflow-x: hidden;
 }
 
+/* Cabeçalho */
 header {
     padding: 20px;
     background-color: #222;
     text-align: center;
 }
 
+/* Títulos */
 h1, h2 {
     color: #4CAF50;
+    font-family: 'Poppins', sans-serif;
 }
 
+/* Estrutura principal */
 main {
     display: flex;
     flex-direction: column;
@@ -25,11 +30,12 @@ main {
     width: 100vw;
 }
 
+/* Seções */
 section {
     flex: 1;
     width: 100%;
     max-width: 100vw;
-    padding: 20px;
+    padding: 40px;
     background-color: #333;
     display: flex;
     flex-direction: column;
@@ -39,9 +45,11 @@ section {
     box-sizing: border-box;
 }
 
+/* Links */
 a {
     color: #4CAF50; 
     text-decoration: none;
+    font-weight: bold;
 }
 
 a:visited {
@@ -52,12 +60,94 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Remove os marcadores da lista */
 ul {
     list-style: none;
     padding: 0;
 }
 
+/* Estilo dos itens da lista */
 li {
     font-size: 18px;
     margin: 10px 0;
+}
+
+/* Seção "Sobre Mim" */
+#sobre-mim {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#sobre-mim h2 {
+    color: #4CAF50;
+    font-size: 26px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+#sobre-mim p {
+    font-size: 18px;
+    color: #ddd;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Estilização da caixa de informações */
+.info-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+/* Estilização dos itens de informações */
+.info-item {
+    flex: 1 1 45%;
+    display: flex;
+    align-items: center;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Ícones antes dos textos */
+.info-item span {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* Títulos das informações */
+.info-item strong {
+    color: #4CAF50;
+    margin-right: 8px; /* Espaço entre o título e o texto */
+}
+
+/* Texto após os ":" alinhado corretamente */
+.info-item strong + span {
+    margin-left: 5px;
+}
+
+/* Ajuste para garantir espaçamento correto nas seções */
+#projetos, #contato {
+    width: 100%;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#projetos h2, #contato h2 {
+    color: #4CAF50;
+    font-size: 26px;
+    margin-bottom: 20px;
 }
