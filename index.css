@@ -1,0 +1,49 @@
+body {
+    color: white;
+    background-color: black;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    background-color: #222;
+    text-align: center;
+}
+
+h1, h2 {
+    color: #4CAF50;
+}
+
+main {
+    width: 100%;
+}
+
+section {
+    width: 100%;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 0;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none; /* Remove os pontos da lista */
+    padding: 0;
+}
+
+li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
