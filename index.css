@@ -30,7 +30,7 @@ section {
 }
 
 ul {
-    list-style: none; /* Remove os pontos da lista */
+    list-style: none;
     padding: 0;
 }
 
