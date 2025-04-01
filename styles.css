@@ -1,11 +1,11 @@
 :root {
-    --primary-color: #181818; /* Preto quase puro */
-    --secondary-color: #EBDCC4; /* Bege claro */
-    --light-color: #1E1E1E; /* Preto levemente mais claro */
-    --dark-color: #121212; /* Preto mais escuro */
-    --accent-color: #EBDCC4; /* Bege claro como cor de destaque */
-    --text-color: #EBDCC4; /* Texto principal em bege */
-    --text-secondary: #B0A99E; /* Bege mais escuro para texto secundário */
+    --primary-color: #181818;
+    --secondary-color: #EBDCC4;
+    --light-color: #1E1E1E;
+    --dark-color: #121212;
+    --accent-color: #EBDCC4; 
+    --text-color: #EBDCC4;
+    --text-secondary: #B0A99E; 
 }
 
 * {
