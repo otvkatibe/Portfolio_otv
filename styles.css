@@ -461,16 +461,30 @@ footer {
     }
 }
 
-@media (max-width: 576px) {
-    h1 {
-        font-size: 2rem;
+@media only screen and (max-width: 428px) {
+    #contact {
+        padding: 2rem 1rem;
     }
     
-    .portfolio-grid {
+    .contact-container {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
     }
     
-    .section-title {
-        font-size: 1.8rem;
+    .contact-form,
+    .contact-info {
+        padding: 1.5rem;
+    }
+    
+    .form-group input,
+    .form-group textarea {
+        font-size: 16px;
+    }
+    
+    @supports (padding: max(0px)) {
+        #contact {
+            padding-left: max(1rem, env(safe-area-inset-left));
+            padding-right: max(1rem, env(safe-area-inset-right));
+        }
     }
 }
