@@ -21,6 +21,11 @@ body {
     line-height: 1.6;
 }
 
+body, html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 header {
     background-color: var(--primary-color);
     color: var(--secondary-color);
