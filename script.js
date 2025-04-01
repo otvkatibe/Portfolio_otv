@@ -1,4 +1,3 @@
-// Dados do portfólio
 const portfolioData = {
     projects: [
         {
@@ -6,14 +5,14 @@ const portfolioData = {
             title: "Gerador de Ticket",
             description: "Gerador de ticket desenvolvido como atividade pontuada em Desenvolvimento Fullstack",
             image: "",
-            link: "https://ticket-one-amber.vercel.app/"
+            link: "https://github.com/otvkatibe/ticket.git"
         },
         {
             id: 2,
             title: "Calculadora de Idade",
             description: "Calculadora de idade desenvolvida como atividade pontuada em Desenvolvimento Fullstack",
             image: "",
-            link: "https://calculadora-puce-rho.vercel.app/"
+            link: "https://github.com/otvkatibe/calculadora.git"
         },
         {
             id: 3,
@@ -36,7 +35,6 @@ const portfolioData = {
     ]
 };
 
-// Carrega os projetos no portfólio
 function loadProjects() {
     const portfolioGrid = document.querySelector('.portfolio-grid');
     
@@ -60,7 +58,6 @@ function loadProjects() {
     });
 }
 
-// Carrega os links sociais
 function loadSocialLinks() {
     const socialLinks = document.querySelector('.social-links');
     
@@ -74,7 +71,6 @@ function loadSocialLinks() {
     });
 }
 
-// Configura o menu mobile
 function setupMobileMenu() {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
@@ -83,7 +79,6 @@ function setupMobileMenu() {
         navLinks.classList.toggle('active');
     });
     
-    // Fechar menu ao clicar em um link
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
@@ -91,11 +86,9 @@ function setupMobileMenu() {
     });
 }
 
-// Configura o scroll suave
 function setupSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
-            // Não aplicar scroll suave para links externos
             if (this.getAttribute('href').startsWith('http')) return;
             
             e.preventDefault();
@@ -111,12 +104,10 @@ function setupSmoothScroll() {
     });
 }
 
-// Atualiza o ano no copyright
 function updateCopyrightYear() {
     document.getElementById('year').textContent = new Date().getFullYear();
 }
 
-// Animação dos itens do portfólio
 function animatePortfolioItems() {
     const portfolioItems = document.querySelectorAll('.portfolio-item');
     
@@ -142,7 +133,6 @@ function animatePortfolioItems() {
     window.addEventListener('load', animateOnScroll);
 }
 
-// Previne o envio do formulário (apenas visual)
 function setupContactForm() {
     const form = document.querySelector('.contact-form');
     if (form) {
@@ -154,7 +144,6 @@ function setupContactForm() {
     }
 }
 
-// Inicializa tudo quando o DOM estiver carregado
 document.addEventListener('DOMContentLoaded', () => {
     loadProjects();
     loadSocialLinks();
