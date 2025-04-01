@@ -418,6 +418,13 @@ footer {
     box-shadow: none;
 }
 
+.container {
+  width: 100%;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-sizing: border-box;
+}
+
 /* Responsivo */
 @media (max-width: 992px) {
     .about-content,
