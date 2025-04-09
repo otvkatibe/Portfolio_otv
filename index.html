@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Portfólio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header id="home">
+        <div class="hero-bg"></div>
+        <div class="header-content">
+            <div class="profile-header">
+                <h1>Otávio Katibe</h1>
+            </div>
+            <p class="tagline">Estudante de Engenharia da Computação</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    
+    <main>
+        <section id="about">
+            <h2 class="section-title">Sobre Mim</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Olá! Sou Otávio Katibe, estudante de Engenharia da Computação na universidade Senai Cimatec, possuo experiência em diversas
+                    áreas de programação e estou em busca de adquirir mais conhecimento e enfrentar desafios, meu foco é tentar pôr em prática conhecimentos gerados
+                    em sala de aula.</p>
+                </div>
+                <div class="skills">
+                    <h3>Habilidades</h3>
+                    <ul class="skills-list">
+                        <li>C, C++</li>
+                        <li>Java</li>
+                        <li>SQL</li>
+                        <li>HTML, CSS, JS</li>
+                        <li>Inglês avançado</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        
+        <section id="portfolio">
+            <h2 class="section-title">Meus Projetos</h2>
+            <div class="portfolio-grid">
+            </div>
+        </section>
+        
+        <section id="contact">
+            <h2 class="section-title">Contato</h2>
+            <div class="contact-container">
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" placeholder="Seu nome" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Assunto</label>
+                        <input type="text" id="subject" placeholder="Sobre o que deseja falar?">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem</label>
+                        <textarea id="message" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Enviar Mensagem</button>
+                </form>
+                
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>otavio.katibe@aln.senaicimatec.edu.br</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Salvador, Brasil</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="social-links">
+        </div>
+        <p class="copyright">&copy; <span id="year"></span> Otávio Katibe. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
