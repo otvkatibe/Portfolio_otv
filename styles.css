@@ -271,40 +271,26 @@ section {
   font-size: 0.95rem;
 }
 
-.btn {
-  display: inline-block;
-  padding: 0.8rem 1.5rem;
-  background-color: var(--secondary-color);
-  color: var(--primary-color);
-  border-radius: 4px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.3s;
-  border: none;
-  cursor: pointer;
-  font-size: 1rem;
-  letter-spacing: 0.5px;
-}
-
-.btn:hover {
-  background-color: #d8c8ae;
-  transform: translateY(-2px);
-  box-shadow: 0 5px 10px rgba(235, 220, 196, 0.2);
-}
-
+/* Seção Contato - Código Atualizado */
 .contact-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 3rem;
-  align-items: start;
+  gap: 2rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
 }
 
-.contact-form {
+.contact-form, 
+.contact-info {
   background: #1E1E1E;
-  padding: 1.5rem;
+  padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
   border: 1px solid rgba(235, 220, 196, 0.1);
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .form-group {
@@ -342,14 +328,6 @@ section {
   resize: vertical;
 }
 
-.contact-info {
-  background: #1E1E1E;
-  padding: 1.5rem;
-  border-radius: 8px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  border: 1px solid rgba(235, 220, 196, 0.1);
-}
-
 .info-item {
   display: flex;
   align-items: center;
@@ -367,6 +345,27 @@ section {
 .info-item span {
   font-size: 1.1rem;
   color: var(--text-secondary);
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.btn:hover {
+  background-color: #d8c8ae;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(235, 220, 196, 0.2);
 }
 
 footer {
@@ -413,6 +412,7 @@ footer {
   box-shadow: none;
 }
 
+/* Media Queries */
 @media (min-width: 768px) {
   .about-content,
   .contact-container {
@@ -433,6 +433,10 @@ footer {
   
   .portfolio-img {
       height: 250px;
+  }
+  
+  section {
+      padding: 4rem 2rem;
   }
 }
 
@@ -469,6 +473,11 @@ footer {
   
   .hamburger.active i::before {
       content: '\f00d';
+  }
+  
+  .contact-form, 
+  .contact-info {
+      padding: 1.5rem;
   }
 }
 
