@@ -4,29 +4,29 @@ const portfolioData = {
             id: 1,
             title: "Gerador de Ticket",
             description: "Gerador de ticket desenvolvido como atividade pontuada em Desenvolvimento Fullstack",
-            image: "",
-            link: "https://github.com/otvkatibe/ticket.git"
+            image: "https://ticket-one-amber.vercel.app/",
+            link: "https://github.com/otvkatibe/ticket"
         },
         {
             id: 2,
             title: "Calculadora de Idade",
             description: "Calculadora de idade desenvolvida como atividade pontuada em Desenvolvimento Fullstack",
-            image: "",
-            link: "https://github.com/otvkatibe/calculadora.git"
+            image: "https://calculadora-puce-rho.vercel.app/",
+            link: "https://github.com/otvkatibe/calculadora"
         },
         {
             id: 3,
             title: "Xadrez",
             description: "Projeto em equipe de Xadrez em Java, programação orientada a objetos",
             image: "",
-            link: "https://github.com/otvkatibe/poo_xadrez.git"
+            link: "https://github.com/otvkatibe/poo_xadrez"
         },
         {
             id: 4,
-            title: "Rpg Aed",
-            description: "Projeto em equipe de Xadrez em C, C++, algoritmo e estrutura de Dados",
-            image: "",
-            link: "https://github.com/otvkatibe/JogoRpgCartas.git"
+            title: "Riot - Lol Stats",
+            description: "Projeto em equipe de Fullstack em javascript, react + vite, com a intenção de demonstrar o perfil",
+            image: "https://riot-frontend-lime.vercel.app/",
+            link: "https://github.com/otvkatibe/riot-frontend"
         }
     ],
     socialLinks: [
