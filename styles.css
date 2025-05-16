@@ -21,6 +21,7 @@ body {
   line-height: 1.6;
   overflow-x: hidden;
   width: 100%;
+  transition: background 0.3s, color 0.3s;
 }
 
 header {
@@ -31,6 +32,7 @@ header {
   position: relative;
   overflow: hidden;
   border-bottom: 2px solid var(--secondary-color);
+  transition: background 0.3s, color 0.3s;
 }
 
 .header-content {
@@ -90,6 +92,7 @@ nav {
   top: 0;
   z-index: 100;
   border-bottom: 1px solid rgba(235, 220, 196, 0.2);
+  transition: background 0.3s, color 0.3s;
 }
 
 .nav-container {
@@ -160,6 +163,9 @@ section {
   color: var(--secondary-color);
   position: relative;
   letter-spacing: 1px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.7s, transform 0.7s;
 }
 
 .section-title::after {
@@ -169,6 +175,11 @@ section {
   height: 2px;
   background-color: var(--secondary-color);
   margin: 0.5rem auto;
+}
+
+.section-title.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 .about-content {
@@ -225,8 +236,8 @@ section {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s;
   border: 1px solid rgba(235, 220, 196, 0.1);
+  transition: background 0.3s, color 0.3s;
 }
 
 .portfolio-item:hover {
@@ -247,13 +258,6 @@ section {
   position: relative;
 }
 
-.portfolio-img .img-fallback {
-  color: var(--text-secondary);
-  padding: 1rem;
-  text-align: center;
-  z-index: 1;
-}
-
 .portfolio-content {
   padding: 1.5rem;
 }
@@ -271,7 +275,6 @@ section {
   font-size: 0.95rem;
 }
 
-/* Seção Contato - Código Atualizado */
 .contact-container {
   display: grid;
   grid-template-columns: 1fr;
@@ -291,6 +294,7 @@ section {
   border: 1px solid rgba(235, 220, 196, 0.1);
   width: 100%;
   box-sizing: border-box;
+  transition: background 0.3s, color 0.3s;
 }
 
 .form-group {
@@ -326,6 +330,12 @@ section {
 .form-group textarea {
   min-height: 150px;
   resize: vertical;
+}
+
+.form-feedback {
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1rem;
 }
 
 .info-item {
@@ -374,6 +384,7 @@ footer {
   text-align: center;
   padding: 2rem;
   border-top: 1px solid rgba(235, 220, 196, 0.2);
+  transition: background 0.3s, color 0.3s;
 }
 
 .social-links {
@@ -394,25 +405,54 @@ footer {
   transform: translateY(-3px);
 }
 
-.copyright {
-  margin-top: 1rem;
-  opacity: 0.8;
-  color: var(--text-secondary);
-}
-
 .btn.disabled {
   background-color: #444;
   color: #777;
   cursor: not-allowed;
 }
 
-.btn.disabled:hover {
-  background-color: #444;
-  transform: none;
-  box-shadow: none;
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 999;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+#backToTop:hover {
+  background: #fff;
 }
 
-/* Media Queries */
+.theme-toggle {
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  transition: background 0.3s;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.portfolio-item.visible {
+  animation: fadeInUp 0.6s both;
+}
+
 @media (min-width: 768px) {
   .about-content,
   .contact-container {
