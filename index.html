@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <title>Portfólio</title>
+    <title>Otávio Katibe - Portfólio</title>
     <meta name="description" content="Portfólio de Otávio Katibe, estudante de Engenharia da Computação. Veja meus projetos, habilidades e entre em contato.">
     <meta property="og:title" content="Portfólio Otávio Katibe">
     <meta property="og:description" content="Projetos, habilidades e contato de Otávio Katibe.">
+    <meta property="og:type" content="website">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -14,98 +19,285 @@
         <div class="hero-bg"></div>
         <div class="header-content">
             <div class="profile-header">
-                <h1>Otávio Katibe</h1>
+                <div class="profile-pic-container">
+                    <div class="profile-pic-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <h1>Otávio Katibe</h1>
+                    <p class="tagline">Estudante de Engenharia da Computação</p>
+                    <p class="subtitle">Transformando ideias em código • Apaixonado por tecnologia</p>
+                </div>
             </div>
-            <p class="tagline">Estudante de Engenharia da Computação</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">4+</span>
+                    <span class="stat-label">Projetos</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">2+</span>
+                    <span class="stat-label">Anos de Estudo</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">5+</span>
+                    <span class="stat-label">Tecnologias</span>
+                </div>
+            </div>
         </div>
     </header>
 
     <nav>
         <div class="nav-container">
+            <div class="nav-logo">
+                <span>OK</span>
+            </div>
             <ul class="nav-links">
-                <li><a href="#home">Inicio</a></li>
+                <li><a href="#home">Início</a></li>
                 <li><a href="#about">Sobre</a></li>
+                <li><a href="#experience">Experiência</a></li>
                 <li><a href="#portfolio">Projetos</a></li>
                 <li><a href="#contact">Contato</a></li>
             </ul>
-            <div class="hamburger">
-                <i class="fas fa-bars"></i>
+            <div class="nav-actions">
+                <button class="theme-toggle" aria-label="Alternar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
     
     <main>
         <section id="about">
-            <h2 class="section-title">Sobre Mim</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Olá! Sou Otávio Katibe, estudante de Engenharia da Computação na universidade Senai Cimatec, possuo experiência em diversas
-                    áreas de programação e estou em busca de adquirir mais conhecimento e enfrentar desafios, meu foco é tentar pôr em prática conhecimentos gerados
-                    em sala de aula.</p>
+            <div class="container">
+                <h2 class="section-title">Sobre Mim</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="intro-text">
+                            Olá! Sou Otávio Katibe, estudante de Engenharia da Computação na universidade Senai Cimatec. 
+                            Tenho paixão por tecnologia e desenvolvimento de software, sempre buscando aprender novas 
+                            tecnologias e enfrentar desafios que me permitam crescer profissionalmente.
+                        </p>
+                        <p>
+                            Meu foco está em aplicar os conhecimentos adquiridos em sala de aula em projetos práticos, 
+                            desenvolvendo soluções criativas e eficientes. Estou sempre em busca de oportunidades para 
+                            expandir meus conhecimentos e contribuir com projetos inovadores.
+                        </p>
+                        <div class="about-highlights">
+                            <div class="highlight-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Engenharia da Computação - Senai Cimatec</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Salvador, Bahia</span>
+                            </div>
+                            <div class="highlight-item">
+                                <i class="fas fa-language"></i>
+                                <span>Inglês Avançado</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skills-section">
+                        <h3>Habilidades Técnicas</h3>
+                        <div class="skills-grid">
+                            <div class="skill-category">
+                                <h4>Linguagens</h4>
+                                <div class="skills-list">
+                                    <span class="skill-tag">C & C++</span>
+                                    <span class="skill-tag">JavaScript + Typescript</span>
+                                    <span class="skill-tag">SQL: POSTGRES + MYSQL</span>
+                                    <span class="skill-tag">NOSQL: MONGODB</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Frontend</h4>
+                                <div class="skills-list">
+                                    <span class="skill-tag">HTML5</span>
+                                    <span class="skill-tag">CSS3</span>
+                                    <span class="skill-tag">TailwindCss</span>
+                                    <span class="skill-tag">React</span>
+                                    <span class="skill-tag">Vite</span>
+                                </div>
+                            </div>
+                            <div class="skill-category">
+                                <h4>Ferramentas</h4>
+                                <div class="skills-list">
+                                    <span class="skill-tag">Git + GitHub</span>
+                                    <span class="skill-tag">VS Code</span>
+                                    <span class="skill-tag">Vercel</span>
+                                    <span class="skill-tag">Postman</span>
+                                    <span class="skill-tag">Figma</span>
+                                    <span class="skill-tag">Swagger</span>
+                                    <span class="skill-tag">Jest</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skills">
-                    <h3>Habilidades</h3>
-                    <ul class="skills-list">
-                        <li>C, C++</li>
-                        <li>Java</li>
-                        <li>SQL</li>
-                        <li>HTML, CSS, JS</li>
-                        <li>Inglês avançado</li>
-                    </ul>
+            </div>
+        </section>
+
+        <section id="experience">
+            <div class="container">
+                <h2 class="section-title">Experiência & Educação</h2>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <h3>Engenharia da Computação</h3>
+                            <h4>Senai Cimatec</h4>
+                            <span class="timeline-date">2022 - Presente</span>
+                            <p>Cursando Engenharia da Computação com foco em desenvolvimento de software, 
+                               estruturas de dados, algoritmos e programação orientada a objetos.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
         
         <section id="portfolio">
-            <h2 class="section-title">Meus Projetos</h2>
-            <div class="portfolio-grid">
+            <div class="container">
+                <h2 class="section-title">Meus Projetos</h2>
+                <div class="portfolio-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="web">Web</button>
+                    <button class="filter-btn" data-filter="java">Java</button>
+                    <button class="filter-btn" data-filter="fullstack">Fullstack</button>
+                </div>
+                <div class="portfolio-grid">
+                    <!-- Projetos serão carregados via JavaScript -->
+                </div>
             </div>
         </section>
         
         <section id="contact">
-            <h2 class="section-title">Contato</h2>
-            <div class="contact-container">
-                <form class="contact-form">
-                    <div class="form-group">
-                        <label for="name">Nome</label>
-                        <input type="text" id="name" placeholder="Seu nome" required>
+            <div class="container">
+                <h2 class="section-title">Vamos Conversar?</h2>
+                <div class="contact-intro">
+                    <p>Estou sempre aberto a novas oportunidades e colaborações. 
+                       Entre em contato comigo para discutir projetos, estágios ou apenas para trocar ideias sobre tecnologia!</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <h3>Informações de Contato</h3>
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <a href="mailto:otavio.katibe@aln.senaicimatec.edu.br">
+                                        otavio.katibe@aln.senaicimatec.edu.br
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Localização</h4>
+                                    <span>Salvador, Bahia - Brasil</span>
+                                </div>
+                            </div>
+                            <div class="contact-method">
+                                <div class="contact-icon">
+                                    <i class="fab fa-github"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>GitHub</h4>
+                                    <a href="https://github.com/otvkatibe" target="_blank" rel="noopener noreferrer">
+                                        github.com/otvkatibe
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="social-links">
+                            <a href="https://github.com/otvkatibe" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/otvkatibe" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" placeholder="seu@email.com" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="subject">Assunto</label>
-                        <input type="text" id="subject" placeholder="Sobre o que deseja falar?">
-                    </div>
-                    <div class="form-group">
-                        <label for="message">Mensagem</label>
-                        <textarea id="message" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn">Enviar Mensagem</button>
-                </form>
-                
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>otavio.katibe@aln.senaicimatec.edu.br</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span>Salvador, Brasil</span>
-                    </div>
+                    
+                    <form class="contact-form">
+                        <h3>Envie uma Mensagem</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nome *</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Assunto</label>
+                            <input type="text" id="subject" name="subject" placeholder="Sobre o que deseja falar?">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensagem *</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Digite sua mensagem aqui..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Enviar Mensagem
+                        </button>
+                        <div class="form-feedback"></div>
+                    </form>
                 </div>
             </div>
         </section>
     </main>
     
     <footer>
-        <div class="social-links">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Otávio Katibe</h3>
+                    <p>Estudante de Engenharia da Computação</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#about">Sobre</a></li>
+                        <li><a href="#portfolio">Projetos</a></li>
+                        <li><a href="#contact">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="https://github.com/otvkatibe" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.instagram.com/otvkatibe" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Otávio Katibe. Todos os direitos reservados.</p>
+            </div>
         </div>
-        <p class="copyright">&copy; <span id="year"></span> Otávio Katibe. Todos os direitos reservados.</p>
     </footer>
 
-    <button id="backToTop" title="Voltar ao topo"><i class="fas fa-arrow-up"></i></button>
+    <button id="backToTop" title="Voltar ao topo" aria-label="Voltar ao topo">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="script.js"></script>
 </body>
 </html>
+
